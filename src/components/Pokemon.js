@@ -1,17 +1,29 @@
 import React from 'react';
 
 
-
-
-function Pokemon() {
+function Pokemon(props) {
+    console.log(props)
     return (
-      <div className="pokemon">
-        
+
+      <li className="pokemon" id={props.pokeId}>
+        <div className="pokemon-image">
+            <img src={props.pokeUrl} alt={props.pokeName}></img>
+        </div>
+
+        <div className="pokemon-name">
+            <h2>{props.pokeName}</h2>
+        </div>
+
+        <div className="pokemon-types">
+             <ul className="type">
+                {props.pokeTypes.map(pokeType =>
+                    <li>{pokeType}</li>) }
+            </ul> 
+        </div>
   
-      </div>
+      </li>
     );
   }
-
 
 
   export default Pokemon; 

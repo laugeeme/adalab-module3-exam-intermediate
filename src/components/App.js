@@ -15,12 +15,14 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.state.data)
     return (
+      
       <div className="App">
 
         <h1>Mi lista de Pokemon</h1>
-        <PokeList dataList={this.state.pokemons} />
-        
+        <PokeList dataList={this.state.data} />
+      
 
       </div>
     );

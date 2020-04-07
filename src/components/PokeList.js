@@ -5,11 +5,19 @@ import Pokemon from './Pokemon';
 
 
 function PokeList(props) {
+    console.log(props)
     return (
       <ul className="pokelist">
         
-        {props.dataList.map}
-
+         {props.dataList.map(pokemonObject =>
+            <Pokemon 
+                key = {pokemonObject.id}
+                pokeName = {pokemonObject.name}
+                pokeUrl = {pokemonObject.url}
+                pokeTypes = {pokemonObject.types}
+            
+            />
+            )} 
 
 
   
