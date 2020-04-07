@@ -2,8 +2,6 @@ import React from 'react';
 import Pokemon from './Pokemon';
 
 
-
-
 function PokeList(props) {
     console.log(props)
     return (
@@ -19,12 +17,9 @@ function PokeList(props) {
             />
             )} 
 
-
-  
       </ul>
     );
   }
-
 
 
   export default PokeList;

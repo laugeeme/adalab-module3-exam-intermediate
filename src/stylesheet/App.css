@@ -1,24 +1,54 @@
 .App {
   text-align: center;
+  padding: 30px;
 }
 
-.pokelist{
+.pokelist{  /* ul */
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+max-width: 70%;
+margin: auto;
 
 
 }
 
 
-
-
-.pokemon{
+.pokemon{ /* li */
+  width: 200px;
+  height: 250px;
+  border: solid 2px palegreen;
+  border-radius: 40px;
+  margin:20px;
 
 
 
 } 
 
-
-.type{
-
-
+.pokemon-image{
+  width: 20%;
+  height: 20%;
+  text-align: center;
   
+
+}
+
+img{
+  text-align: center;
+}
+
+.pokemon-name{
+
+
+}
+
+
+.pokemon-types{  /* div */
+
+}
+
+.type{  /* ul */
+  list-style-type: none;
+
+
 }
