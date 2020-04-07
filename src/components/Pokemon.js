@@ -1,8 +1,17 @@
-function App() {
+import React from 'react';
+
+
+
+
+function Pokemon() {
     return (
-      <div className="App">
+      <div className="pokemon">
         
   
       </div>
     );
   }
+
+
+
+  export default Pokemon; 
