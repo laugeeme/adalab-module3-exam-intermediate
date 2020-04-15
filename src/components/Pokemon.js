@@ -1,28 +1,33 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Pokemon(props) {
-  console.log(props);
   return (
     <div className="pokemonCard">
-      <li className="pokemon" id={props.pokeId}>
-        <div className="pokemon-image">
-          <img src={props.pokeUrl} alt={props.pokeName}></img>
-        </div>
+      <div className="pokemon-image">
+        <img src={props.pokeUrl} alt={props.pokeName}></img>
+      </div>
 
-        <div className="pokemon-name">
-          <h2>{props.pokeName}</h2>
-        </div>
+      <div className="pokemon-name">
+        <h2>{props.pokeName}</h2>
+      </div>
 
-        <div className="pokemon-types">
-          <ul className="type">
-            {props.pokeTypes.map((pokeType) => (
-              <li>{pokeType}</li>
-            ))}
-          </ul>
-        </div>
-      </li>
+      <div className="pokemon-types">
+        <ul className="type">
+          {props.pokeTypes.map((pokeType) => (
+            <li>{pokeType}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
+}
+
+
+Pokemon.propTypes ={
+  pokeName: PropTypes.string,
+  id: PropTypes.number,
+  pokeUrl: PropTypes.string,
 }
 
 export default Pokemon;
